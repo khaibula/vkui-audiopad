@@ -14,7 +14,7 @@ export const fetchPlaylist = async (fetchArgs: FetchPlaylistArgs): Promise<Fetch
   if (fetchArgs.playlist.blockId === fetchArgs.playlist.id || fetchArgs.playlist.isRadio) {
     return await fetchPlaylistByBlockId(fetchArgs)
   }
-
+  console.log(1)
   return await fetchPlaylistById(fetchArgs)
 }
 
